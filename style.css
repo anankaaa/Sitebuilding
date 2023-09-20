@@ -223,6 +223,36 @@ th {
     font-size: 1.8px;
 }
 
+.body__row-hidden {
+    box-shadow: 0 12px 12px 0 var(--shadow-color);
+    border-radius: 4px;
+    height: 79px;
+}
+
+
+.hiddenRow {
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+    margin-top: 24px;
+}
+
+.hiddenSpan {
+    font-size: 15px;
+    line-height: 20.43px;
+}
+
+.payment__pdf {
+    width: 21.55px;
+    height: 26.93px;
+    margin-right: 16px;
+}
+
+.payment__cert {
+    line-height: 19.07px;
+}
+
+
 @media screen and (max-width:860px) {
 
     * {

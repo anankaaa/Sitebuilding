@@ -93,7 +93,9 @@
             </tr>
           </thead>
           <tbody>
-            <tr class="body__row">
+            <tr class="accordion-toggle body__row"
+            data-toggle="collapse"
+            data-target="#dropdown1">
               <td class="payment__identity firstId py-sm-4">
                 <div
                   class="idWrapper text-truncate firstWrapper"
@@ -119,7 +121,7 @@
                 <span class="circle statusz__item-progress"></span>
                 <span class="statusz__text">Folyamatban</span>
               </td>
-              <td class="payment__attachment py-psm-4">
+              <td class="payment__attachment py-sm-4">
                 <img
                   class="attachment"
                   src="img/attachment.png"
@@ -127,21 +129,41 @@
                 />
               </td>
               <td class="py-sm-4">
-                <button class="open__button">
-                  <img
-                    class="down__arrow"
-                    src="img/rightarrow.png"
-                    alt="dropdown button"
-                  />
+                <button class="btn btn-default btn-xs">
+                  <span class="caret"
+                    ><img
+                      class="down__arrow"
+                      src="img/rightarrow.png"
+                      alt="dropdown button"
+                  /></span>
                 </button>
               </td>
+              
+              <tr id="dropdown1" class="accordian-body collapse body__row-hidden">
+                <div>
+                  <td colspan="7" class="hiddenRow py-sm-4">
+                    <div class="card card-body" style="display: flex;flex-direction: row;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
+                      <p class="hiddenRow">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
+                      <p class="hiddenRow">Díjelőírás <br><span class="hiddenSpan">5 000 Ft</span> </p>
+                      <p class="hiddenRow">Könyvelt Díj <br><span class="hiddenSpan payment__amount">0 Ft</span></p>
+                  </div>
+                  <div class="col hiddenAttachment order1">
+                      <p class="hiddenRow">Csatolmány</p>
+                      <p><img class="payment__pdf" src="img/pdf.png" alt="attachment"><span class="payment__cert">Fizetési nyugta letöltése</span></p>
+                  </div>                  
+                  </td>
+                </div>       
             </tr>
-            <tr class="body__row">
+            </tr>
+
+            <tr class="accordion-toggle body__row"
+            data-toggle="collapse"
+            data-target="#dropdown2">
               <td class="payment__identity py-sm-4">123456789</td>
               <td class="payment__mode py-sm-4">Átutalás</td>
               <td class="payment__date ml-5 pt-sm-4 pb-4">2019.06.25.</td>
               <td class="payment__amount ml-3 py-sm-4">
-                <span class="circle__amount statusz__item-done"></span>5000Ft
+                <span class="circle__amount statusz__item-done"></span>5 000 Ft
               </td>
               <td class="payment__status ml-5 py-sm-4">
                 <span class="circle statusz__item-done"></span>
@@ -155,15 +177,33 @@
                 />
               </td>
               <td class="py-sm-4">
-                <button class="open__button">
-                  <img
-                    class="down__arrow"
-                    src="img/rightarrow.png"
-                    alt="dropdown button"
-                  />
+                <button class="btn btn-default btn-xs">
+                  <span class="caret"
+                    ><img
+                      class="down__arrow"
+                      src="img/rightarrow.png"
+                      alt="dropdown button"
+                  /></span>
                 </button>
               </td>
+              
+              <tr id="dropdown2" class="accordian-body collapse body__row-hidden">
+                <div>
+                  <td colspan="7" class="hiddenRow py-sm-4">
+                    <div class="card card-body" style="display: flex;flex-direction: row;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
+                      <p class="hiddenRow">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
+                      <p class="hiddenRow">Díjelőírás <br><span class="hiddenSpan">5 000 Ft</span> </p>
+                      <p class="hiddenRow">Könyvelt Díj <br><span class="hiddenSpan payment__amount">5 000 Ft</span></p>
+                  </div>
+                  <div class="col hiddenAttachment order1">
+                      <p class="hiddenRow">Csatolmány</p>
+                      <p><img class="payment__pdf" src="img/pdf.png" alt="attachment"><span class="payment__cert">Fizetési nyugta letöltése</span></p>
+                  </div>                  
+                  </td>
+                </div>       
             </tr>
+            </tr>
+
             <tr class="body__row">
               <td class="payment__identity secondId py-sm-4">
                 <div
@@ -183,7 +223,7 @@
               <td class="payment__mode py-sm-4">Bankkártya</td>
               <td class="payment__date ml-5 pt-sm-4 pb-4">2019.06.25.</td>
               <td class="payment__amount ml-3 py-sm-4">
-                <span class="circle__amount statusz__item-reject"></span>5000Ft
+                <span class="circle__amount statusz__item-reject"></span>5 000 Ft
               </td>
               <td class="payment__status ml-5 py-sm-4">
                 <span class="circle statusz__item-reject"></span>
@@ -191,7 +231,10 @@
               </td>
               <td class="payment__attachment py-sm-4"></td>
             </tr>
-            <tr class="body__row">
+            
+            <tr class="accordion-toggle body__row"
+            data-toggle="collapse"
+            data-target="#dropdown3">
               <td class="payment__identity thirdId py-sm-4">
                 <div
                   class="idWrapper text-truncate thirdWrapper"
@@ -210,7 +253,7 @@
               <td class="payment__mode py-sm-4">Bankkártya</td>
               <td class="payment__date ml-5 pt-sm-4 pb-4">2019.06.25.</td>
               <td class="payment__amount ml-3 py-sm-4">
-                <span class="circle__amount statusz__item-done"></span>5000Ft
+                <span class="circle__amount statusz__item-done"></span>5 000 Ft
               </td>
               <td class="payment__status ml-5 py-sm-4">
                 <span class="circle statusz__item-done"></span>
@@ -224,14 +267,31 @@
                 />
               </td>
               <td class="py-sm-4">
-                <button class="open__button">
-                  <img
-                    class="down__arrow down3"
-                    src="img/rightarrow.png"
-                    alt="dropdown button"
-                  />
+                <button class="btn btn-default btn-xs">
+                  <span class="caret"
+                    ><img
+                      class="down__arrow"
+                      src="img/rightarrow.png"
+                      alt="dropdown button"
+                  /></span>
                 </button>
               </td>
+              
+              <tr id="dropdown3" class="accordian-body collapse body__row-hidden">
+                <div>
+                  <td colspan="7" class="hiddenRow py-sm-4">
+                    <div class="card card-body" style="display: flex;flex-direction: row;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
+                      <p class="hiddenRow">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
+                      <p class="hiddenRow">Díjelőírás <br><span class="hiddenSpan">5 000 Ft</span> </p>
+                      <p class="hiddenRow">Könyvelt Díj <br><span class="hiddenSpan payment__amount">5 000 Ft</span></p>
+                  </div>
+                  <div class="col hiddenAttachment order1">
+                      <p class="hiddenRow">Csatolmány</p>
+                      <p><img class="payment__pdf" src="img/pdf.png" alt="attachment"><span class="payment__cert">Fizetési nyugta letöltése</span></p>
+                  </div>                  
+                  </td>
+                </div>       
+            </tr>
             </tr>
           </tbody>
         </table>
