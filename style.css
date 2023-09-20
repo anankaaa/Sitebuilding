@@ -144,10 +144,6 @@ th {
     height: 79px;
 }
 
-td {
-    margin-top: 33px;
-    padding: 30px;
-}
 
 .truncate__arrow {
     width: 6.86px;
@@ -318,8 +314,14 @@ td {
         margin-top: 16px;
     }
 
-    td {
-        margin: 0;
-        padding: 0;
+    .payment__status,
+    .payment__date {
+        line-height: 16.34px;
     }
+
+    .payment__amount {
+        line-height: 26.15px;
+        letter-spacing: 0.75px;
+    }
+
 }
