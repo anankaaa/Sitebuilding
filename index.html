@@ -139,7 +139,7 @@
                 </button>
               </td>
               
-              <tr id="dropdown1" class="accordian-body collapse body__row-hidden">
+              <tr id="dropdown1" class="accordian-body collapse body__row-hidden accordionDesktop">
                 <div>
                   <td colspan="7" class="hiddenRow py-sm-4">
                     <div class="card card-body" style="display: flex;flex-direction: row;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
@@ -154,6 +154,27 @@
                   </td>
                 </div>       
             </tr>
+
+            <tr id="dropdown1" class="accordian-body collapse body__row-hidden accordionMobile">
+              <div>
+                <td colspan="7" class="hiddenRow py-sm-4">
+                  <div class="card card-body" style="display: block;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
+                    <p class="hiddenRow " style="margin-right:14.29%">Státusz <br> <span class="hiddenSpan">Folyamatban</span> </p>
+                    <p class="hiddenRow" style="margin-right:7.15%" >Azonosító <br><span class="hiddenSpan">EPAYMT8955</span> </p>
+                    <p class="hiddenRow" >Hogyan <br><span class="hiddenSpan">Bankkártya</span></p>
+                </div>
+                  <div class="col hiddenAttachment" style="border-bottom: 1px solid rgba(214, 214, 214, 0.549)">
+                      <p class="hiddenRow">Csatolmány</p>
+                      <p><img class="payment__pdf" src="img/pdf.png" alt="attachment"><span class="payment__cert">Elő nyugta letöltése</span></p>
+                  </div>                  
+                  <div class="card card-body" style="display: block;border: none">
+                    <p class="hiddenRow " style="margin-right:14.29%">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
+                    <p class="hiddenRow" style="margin-right:7.15%; display:inline-block" >Díjelőírás <br><span class="hiddenSpan">5 000 Ft</span> </p>
+                    <p class="hiddenRow" style="display:inline-block">Könyvelt Díj <br><span class="hiddenSpan payment__amount">0 Ft</span></p>
+                </div>
+                </td>
+              </div>       
+          </tr>
             </tr>
 
             <tr class="accordion-toggle body__row"
@@ -187,7 +208,7 @@
                 </button>
               </td>
               
-              <tr id="dropdown2" class="accordian-body collapse body__row-hidden">
+              <tr id="dropdown2" class="accordian-body collapse body__row-hidden accordionDesktop">
                 <div>
                   <td colspan="7" class="hiddenRow py-sm-4">
                     <div class="card card-body" style="display: flex;flex-direction: row;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
@@ -202,6 +223,27 @@
                   </td>
                 </div>       
             </tr>
+
+            <tr id="dropdown2" class="accordian-body collapse body__row-hidden accordionMobile">
+              <div>
+                <td colspan="7" class="hiddenRow py-sm-4">
+                  <div class="card card-body" style="display: block;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
+                    <p class="hiddenRow " style="margin-right:14.29%">Státusz <br> <span class="hiddenSpan">Beérkezett</span> </p>
+                    <p class="hiddenRow" style="margin-right:7.15%" >Azonosító <br><span class="hiddenSpan">EPAYMT8966</span> </p>
+                    <p class="hiddenRow" >Hogyan <br><span class="hiddenSpan">Bankkártya</span></p>
+                </div>
+                  <div class="col hiddenAttachment" style="border-bottom: 1px solid rgba(214, 214, 214, 0.549)">
+                      <p class="hiddenRow">Csatolmány</p>
+                      <p><img class="payment__pdf" src="img/pdf.png" alt="attachment"><span class="payment__cert">Fizetési nyugta letöltése</span></p>
+                  </div>                  
+                  <div class="card card-body" style="display: block;border: none">
+                    <p class="hiddenRow " style="margin-right:14.29%">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
+                    <p class="hiddenRow" style="margin-right:7.15%; display:inline-block" >Díjelőírás <br><span class="hiddenSpan">5 000 Ft</span> </p>
+                    <p class="hiddenRow" style="display:inline-block">Könyvelt Díj <br><span class="hiddenSpan payment__amount">5 000 Ft</span></p>
+                </div>
+                </td>
+              </div>       
+          </tr>
             </tr>
 
             <tr class="body__row">
@@ -277,21 +319,43 @@
                 </button>
               </td>
               
-              <tr id="dropdown3" class="accordian-body collapse body__row-hidden">
+              <tr id="dropdown3" class="accordian-body collapse body__row-hidden accordionDesktop">
                 <div>
                   <td colspan="7" class="hiddenRow py-sm-4">
                     <div class="card card-body" style="display: flex;flex-direction: row;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
-                      <p class="hiddenRow time" style="margin-right:14.29%">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
+                      <p class="hiddenRow " style="margin-right:14.29%">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
                       <p class="hiddenRow" style="margin-right:7.15%">Díjelőírás <br><span class="hiddenSpan">5 000 Ft</span> </p>
                       <p class="hiddenRow">Könyvelt Díj <br><span class="hiddenSpan payment__amount">5 000 Ft</span></p>
                   </div>
-                  <div class="col hiddenAttachment order1">
+                  <div class="col hiddenAttachment">
                       <p class="hiddenRow">Csatolmány</p>
                       <p><img class="payment__pdf" src="img/pdf.png" alt="attachment"><span class="payment__cert">Fizetési nyugta letöltése</span></p>
                   </div>                  
                   </td>
                 </div>       
             </tr>
+
+
+            <tr id="dropdown3" class="accordian-body collapse body__row-hidden accordionMobile">
+              <div>
+                <td colspan="7" class="hiddenRow py-sm-4">
+                  <div class="card card-body" style="display: block;border: none;border-bottom: 1px solid rgba(214, 214, 214, 0.549);">
+                    <p class="hiddenRow " style="margin-right:14.29%">Státusz <br> <span class="hiddenSpan">Beérkezett</span> </p>
+                    <p class="hiddenRow" style="margin-right:7.15%" >Azonosító <br><span class="hiddenSpan">EPAYMT8977</span> </p>
+                    <p class="hiddenRow" >Hogyan <br><span class="hiddenSpan">Bankkártya</span></p>
+                </div>
+                  <div class="col hiddenAttachment" style="border-bottom: 1px solid rgba(214, 214, 214, 0.549)">
+                      <p class="hiddenRow">Csatolmány</p>
+                      <p><img class="payment__pdf" src="img/pdf.png" alt="attachment"><span class="payment__cert">Fizetési nyugta letöltése</span></p>
+                  </div>                  
+                  <div class="card card-body" style="display: block;border: none">
+                    <p class="hiddenRow " style="margin-right:14.29%">Biztosítási időszak <br> <span class="hiddenSpan">2019.06.02 - 07.01.</span> </p>
+                    <p class="hiddenRow" style="margin-right:7.15%; display:inline-block" >Díjelőírás <br><span class="hiddenSpan">5 000 Ft</span> </p>
+                    <p class="hiddenRow" style="display:inline-block">Könyvelt Díj <br><span class="hiddenSpan payment__amount">5 000 Ft</span></p>
+                </div>
+                </td>
+              </div>       
+          </tr>
             </tr>
           </tbody>
         </table>

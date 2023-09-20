@@ -253,6 +253,10 @@ th {
 
 }
 
+.accordionMobile {
+    display: none;
+}
+
 
 @media screen and (max-width:860px) {
 
@@ -384,8 +388,15 @@ th {
         letter-spacing: 0.75px;
     }
 
-    .idWrapper {
-        font-size: 20px;
+    .accordionMobile {
+        display: table-row;
     }
 
+    .accordionDesktop {
+        display: none;
+    }
+
+    .accordionMobile p span {
+        font-size: 14px;
+    }
 }
