@@ -19,6 +19,22 @@
 
 }
 
+.circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.circle__amount {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: none;
+    margin-right: 14px;
+}
+
 #header {
     display: flex;
     flex-direction: row;
@@ -176,15 +192,15 @@ th {
 }
 
 .statusz__item-progress {
-    color: rgba(161, 202, 255, 1);
+    background-color: rgba(161, 202, 255, 1);
 }
 
 .statusz__item-done {
-    color: var(--secondary-green-color);
+    background-color: var(--secondary-green-color);
 }
 
 .statusz__item-reject {
-    color: rgba(220, 65, 79, 1);
+    background-color: rgba(220, 65, 79, 1);
 }
 
 .payment__amount {
@@ -246,6 +262,14 @@ th {
         font-size: 12px;
     }
 
+    .circle {
+        display: none;
+    }
+
+    .circle__amount {
+        display: inline-block;
+    }
+
     #header {
         height: 50px;
         justify-content: space-between;
@@ -282,6 +306,11 @@ th {
     .table {
         border-collapse: separate;
         border-spacing: 0 16px;
+    }
+
+    .table>tbody>tr>td,
+    .table>tbody>tr>th {
+        padding: 0px;
     }
 
 
@@ -322,6 +351,10 @@ th {
     .payment__amount {
         line-height: 26.15px;
         letter-spacing: 0.75px;
+    }
+
+    .idWrapper {
+        font-size: 20px;
     }
 
 }
