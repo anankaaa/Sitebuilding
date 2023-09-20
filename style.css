@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --shadow-color: rgba(10, 17, 61, 0.1);
+    --border-color: rgba(241, 242, 244, 1);
+    --grey-letter-color: rgba(61, 66, 76, 1);
+    --blue-letter-color: rgba(40, 49, 104, 1);
+    --secondary-green-color: rgba(1, 187, 161, 1);
+
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+    height: 80px;
+    box-shadow: 0 2px 12px 0 var(--shadow-color);
+}
+
+.groupama__logo {
+    width: 130px;
+    height: 34px;
+    margin-top: 25px;
+    margin-left: 9.58%;
+}
+
+.exit__logo {
+    width: 93px;
+    height: 18px;
+    margin-top: 31px;
+    margin-left: 66.11%;
+}
+
+.exitsmall__logo {
+    visibility: hidden;
+}
+
+main {
+    position: relative;
+}
+
+.leftside {
+    position: absolute;
+    display: inline-block;
+    width: 21.04%;
+    height: 92vh;
+    margin-left: 9.02%;
+    box-shadow: 0 2px 12px 0 var(--shadow-color);
+}
+
+.insurance__list {
+    list-style: none;
+    line-height: 20.48px;
+    margin-left: 20px;
+}
+
+.insurance__type {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20.43px;
+    color: var(--blue-letter-color);
+    padding-top: 24px;
+    padding-bottom: 35.57px;
+    padding-left: 20px;
+    letter-spacing: 0.75px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+
+.insurance__list li {
+    color: var(--grey-letter-color);
+    letter-spacing: 0.75px;
+}
+
+.insurance__list li:first-child {
+    margin-top: 25px;
+}
+
+.insurance__list li:nth-child(even) {
+    margin-bottom: 36px;
+}
+
+.details {
+    position: absolute;
+    display: inline-block;
+    margin-left: 31.74%;
+    width: 59.2%;
+}
+
+.navbar {
+    border-bottom: 3px solid var(--border-color);
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    padding-bottom: 33px;
+    padding-top: 40px;
+
+}
+
+.nav-link {
+    line-height: 16px;
+    letter-spacing: 0.75px;
+    margin-right: 31px;
+}
+
+.nav-item:hover,
+.nav-item:active {
+    border-bottom: 3px solid var(--secondary-green-color);
+    border-radius: 2px;
+}
+
+.open__button {
+    border: none;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0 16px;
+}
+
+th {
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: rgba(111, 115, 129, 1);
+}
+
+.body__row {
+    box-shadow: 0 2px 12px 0 var(--shadow-color);
+    border-radius: 4px;
+    height: 79px;
+}
+
+td {
+    margin-top: 33px;
+    padding: 30px;
+}
+
+.truncate__arrow {
+    width: 6.86px;
+    height: 8px;
+    color: var(--blue-letter-color);
+    font-size: 1.6px;
+}
+
+.payment__identity {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.payment__identity,
+.payment__date {
+    color: var(--grey-letter-color);
+    line-height: 19.07px;
+}
+
+.payment__mode,
+.payment__status {
+    line-height: 22.88px;
+    letter-spacing: 0.75px;
+    color: var(--grey-letter-color);
+}
+
+.statusz__text {
+    color: var(--grey-letter-color);
+}
+
+.statusz__item-progress {
+    color: rgba(161, 202, 255, 1);
+}
+
+.statusz__item-done {
+    color: var(--secondary-green-color);
+}
+
+.statusz__item-reject {
+    color: rgba(220, 65, 79, 1);
+}
+
+.payment__amount {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21.79px;
+    color: var(--grey-letter-color);
+}
+
+.attachment {
+    width: 17px;
+    height: 17px;
+}
+
+.down__arrow {
+    rotate: 90deg;
+    width: 9px;
+    height: 9px;
+    color: rgba(157, 167, 188, 1);
+    font-size: 1.8px;
+}
+
+@media screen and (max-width:860px) {
+
+    * {
+        font-size: 13px;
+    }
+
+    .leftside {
+        margin-left: 3%;
+    }
+
+    .insurance__list {
+        margin-left: 10px;
+    }
+
+    .insurance__type {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .details {
+        margin-left: 26%;
+        width: 68%;
+        overflow-x: scroll;
+    }
+
+    .groupama__logo {
+        margin-left: 5.%;
+    }
+
+    .exit__logo {
+        margin-left: 50.11%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    * {
+        font-size: 12px;
+    }
+
+    #header {
+        height: 50px;
+        justify-content: space-between;
+    }
+
+    .groupama__logo {
+        width: 114.71px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: 16px;
+    }
+
+    .exit__logo {
+        display: none;
+    }
+
+    .exitsmall__logo {
+        visibility: visible;
+        width: 24.6px;
+        height: 18px;
+        margin-right: 24px;
+        margin-top: 16px;
+    }
+
+    .leftside {
+        display: none;
+    }
+
+    .nav-link {
+        display: inline-block;
+        margin-right: 0;
+    }
+
+    .table {
+        border-collapse: separate;
+        border-spacing: 0 16px;
+    }
+
+
+    thead {
+        display: none;
+    }
+
+    .details {
+        margin-left: 17px;
+        width: 91.5vw;
+        overflow-x: unset;
+    }
+
+    .truncate__arrow,
+    .payment__identity,
+    .payment__mode,
+    .down__arrow,
+    .attachment {
+        display: none;
+    }
+
+    tbody:first-child {
+        margin-top: 26px;
+    }
+
+    .body__row {
+        height: 102px;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 16px;
+    }
+
+    td {
+        margin: 0;
+        padding: 0;
+    }
+}

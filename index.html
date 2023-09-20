@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <title>Groupama</title>
+  </head>
+  <body>
+    <div id="header" class="container-fluid">
+      <img class="groupama__logo" src="img/logo.png" alt="logo" />
+      <img class="exit__logo" src="img/exit.png" alt="exit button" />
+      <img class="exitsmall__logo" src="img/exitsmall.png" alt="exit button" />
+    </div>
+
+    <main>
+      <section class="leftside">
+        <figcaption class="insurance__type">
+          Folyamatos Díjfizetésű Ultra Prémium Életbiztosítás
+        </figcaption>
+        <ul class="insurance__list">
+          <li>Szerződő neve</li>
+          <li>Kovács István</li>
+
+          <li>Szerződésszám</li>
+          <li>87562443</li>
+
+          <li>Utolsó befizetés</li>
+          <li>2019.06.25.</li>
+
+          <li>Biztosítási díj rendezve</li>
+          <li>2019.07.01.</li>
+        </ul>
+      </section>
+
+      <section class="details">
+        <nav class="navbar navbar-expand-sm navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#details__navbar"
+            aria-controls="details__navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="details__navbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgba(40, 49, 104, 1)"
+                  >Fizetendő tételek</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" style="color: rgba(40, 49, 104, 1)"
+                  >Eseti díj megfizetése</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#paymentHistory"
+                  style="color: rgba(40, 49, 104, 1)"
+                  >Fizetési előzmények<span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <table class="table payment table-borderless">
+          <thead>
+            <tr class="head__rows">
+              <th scope="col">Azonosító</th>
+              <th scope="col">Befizetés módja</th>
+              <th scope="col">Dátum</th>
+              <th scope="col">Összeg</th>
+              <th scope="col">Státusz</th>
+              <th scope="col"></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="body__row">
+              <td class="payment__identity firstId">
+                <div
+                  class="idWrapper text-truncate firstWrapper"
+                  style="width: 87px"
+                >
+                  <button class="open__button">
+                    <img
+                      class="truncate__arrow"
+                      src="img/rightarrow.png"
+                      alt="ID shower button"
+                    />
+                  </button>
+                  EPAYMT8955
+                </div>
+              </td>
+              <td class="payment__mode">Bankkártya</td>
+              <td class="payment__date">2019.06.25.</td>
+              <td class="payment__amount">5000Ft</td>
+              <td class="payment__status">
+                <li class="statusz__item-progress">
+                  <span class="statusz__text">Folyamatban</span>
+                </li>
+              </td>
+              <td class="payment__attachment">
+                <img
+                  class="attachment"
+                  src="img/attachment.png"
+                  alt="attachment"
+                />
+              </td>
+              <td>
+                <button class="open__button">
+                  <img
+                    class="down__arrow"
+                    src="img/rightarrow.png"
+                    alt="dropdown button"
+                  />
+                </button>
+              </td>
+            </tr>
+            <tr class="body__row">
+              <td class="payment__identity">123456789</td>
+              <td class="payment__mode">Átutalás</td>
+              <td class="payment__date">2019.06.25.</td>
+              <td class="payment__amount">5000Ft</td>
+              <td class="payment__status">
+                <li class="statusz__item-done">
+                  <span class="statusz__text">Beérkezett</span>
+                </li>
+              </td>
+              <td class="payment__attachment">
+                <img
+                  class="attachment"
+                  src="img/attachment.png"
+                  alt="attachment"
+                />
+              </td>
+              <td>
+                <button class="open__button">
+                  <img
+                    class="down__arrow"
+                    src="img/rightarrow.png"
+                    alt="dropdown button"
+                  />
+                </button>
+              </td>
+            </tr>
+            <tr class="body__row">
+              <td class="payment__identity secondId">
+                <div
+                  class="idWrapper text-truncate secondWrapper"
+                  style="width: 87px"
+                >
+                  <button class="open__button">
+                    <img
+                      class="truncate__arrow"
+                      src="img/rightarrow.png"
+                      alt="ID shower button"
+                    />
+                  </button>
+                  EPAYMT8966
+                </div>
+              </td>
+              <td class="payment__mode">Bankkártya</td>
+              <td class="payment__date">2019.06.25.</td>
+              <td class="payment__amount">5000Ft</td>
+              <td class="payment__status">
+                <li class="statusz__item-reject">
+                  <span class="statusz__text">Sikertelen</span>
+                </li>
+              </td>
+              <td class="payment__attachment"></td>
+            </tr>
+            <tr class="body__row">
+              <td class="payment__identity thirdId">
+                <div
+                  class="idWrapper text-truncate thirdWrapper"
+                  style="width: 87px"
+                >
+                  <button class="open__button">
+                    <img
+                      class="truncate__arrow"
+                      src="img/rightarrow.png"
+                      alt="ID shower button"
+                    />
+                  </button>
+                  EPAYMT8977
+                </div>
+              </td>
+              <td class="payment__mode">Bankkártya</td>
+              <td class="payment__date">2019.06.25.</td>
+              <td class="payment__amount">5000Ft</td>
+              <td class="payment__status">
+                <li class="idWrapper statusz__item-done">
+                  <span class="statusz__text">Beérkezett</span>
+                </li>
+              </td>
+              <td class="payment__attachment">
+                <img
+                  class="attachment"
+                  src="img/attachment.png"
+                  alt="attachment"
+                />
+              </td>
+              <td>
+                <button class="open__button">
+                  <img
+                    class="down__arrow down3"
+                    src="img/rightarrow.png"
+                    alt="dropdown button"
+                  />
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script>
+      const paymentID1 = document.querySelector(".firstId");
+      const idWrapper1 = document.querySelector(".firstWrapper");
+      const paymentID2 = document.querySelector(".secondId");
+      const idWrapper2 = document.querySelector(".secondWrapper");
+      const paymentID3 = document.querySelector(".thirdId");
+      const idWrapper3 = document.querySelector(".thirdWrapper");
+
+      paymentID1.addEventListener("click", () => {
+        idWrapper1.classList.toggle("text-truncate");
+      });
+      paymentID2.addEventListener("click", () => {
+        idWrapper2.classList.toggle("text-truncate");
+      });
+      paymentID3.addEventListener("click", () => {
+        idWrapper3.classList.toggle("text-truncate");
+      });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
