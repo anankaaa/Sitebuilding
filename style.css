@@ -389,7 +389,7 @@ th {
     }
 
     .accordionMobile {
-        display: table-row;
+        display: block;
     }
 
     .accordionDesktop {
