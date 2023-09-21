@@ -259,10 +259,6 @@ th {
 
 }
 
-.accordionMobile {
-    display: none;
-}
-
 
 @media screen and (max-width:860px) {
 
@@ -394,9 +390,6 @@ th {
         letter-spacing: 0.75px;
     }
 
-    .accordionMobile {
-        display: block;
-    }
 
     .accordionDesktop {
         display: none;
@@ -404,5 +397,9 @@ th {
 
     .accordionMobile p span {
         font-size: 14px;
+    }
+
+    .bookedFee {
+        margin-left: 65.6%;
     }
 }
