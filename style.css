@@ -248,6 +248,12 @@ th {
     margin-right: 16px;
 }
 
+.payment__download {
+    width: 12.1px;
+    height: 15.3px;
+    margin-left: 85.58%;
+}
+
 .payment__cert {
     line-height: 19.07px;
 
